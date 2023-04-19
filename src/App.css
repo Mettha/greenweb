@@ -1,38 +1,263 @@
 .App {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Verdana;
+  background-color: #F0EBE8;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*------Headings & Paragraphs------*/
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  color: #313131;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  color: #313131;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #313131;
+}
+
+
+/*------Navigationbaren------*/
+.globalnavigation{
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+} 
+
+.navpunkt{
+  color:#313131;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15pt;
+  padding-top: 20px;
+}
+
+.navlogo{
+  position: relative;
+  top: -30px;
+}
+
+/* ---404 side----*/
+.btn-home{
+  width: 80px;
+  margin: auto;
+  background-color: #DEC271;
+  border: none;
+  color: #F0EBE8;
+  padding: 5px 5px;
+  border-radius: 5pt;
+}
+
+.boat{
+  font-size: 80px;
+  color: #313131;
+}
+
+.wave{
+  width: 200px;
+}
+
+.btn-home:hover{
+  background-color: #2C6246;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+
+/*------Booking sider------*/
+
+/* ---Formular formattering ----*/
+.formularlayout{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.formularlayout >label{
+padding: 10px;
+text-align: right;
+margin-right: 550px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formularlayout >label #beskedfelt{
+  padding-bottom: 60px;
+  width: 200px;
 }
+
+.formularlayout >label >input{
+  margin-left: 10px;
+  padding: 10px;
+  width: 200px;
+  
+}
+
+.formularlayout >button{
+  width: 80px;
+  margin: auto;
+  background-color: #DEC271;
+  border: none;
+  color: #F0EBE8;
+  padding: 5px 20px;
+  border-radius: 5pt;
+}
+
+.formularlayout >button:hover{
+  background-color: #2C6246;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+.btn-delete{
+  width: 80px;
+  margin: auto;
+  background-color: #DEC271;
+  border: none;
+  color: #F0EBE8;
+  padding: 5px 5px;
+  border-radius: 5pt;
+}
+
+.btn-delete:hover{
+  background-color: #2C6246;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.btn-opret{
+  width: 80px;
+  margin: auto;
+  background-color: #DEC271;
+  border: none;
+  color: #F0EBE8;
+  padding: 5px 10px;
+  border-radius: 5pt;
+}
+
+.btn-opret:hover{
+  background-color: #2C6246;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/*------Bekræftigelse------*/
+
+.smiley{
+  width: 100px;
+}
+
+/* ---Kort formattering ----*/
+
+.kortraekke{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bookingskort {
+  cursor: pointer;
+}
+
+.kort{
+  position: relative;
+  width: 240px;
+  margin: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.kort .tekst {
+  text-align: center;
+  padding: 0 10px 50px;
+}
+
+.kort h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.kontakt-ikoner{
+display: flex;
+flex-direction: row;
+justify-content:center;
+justify-content: space-evenly;
+padding: 6%;
+
+}
+
+
+/*------Footer------*/
+.footer{
+  height: auto;
+  margin-top: 2%;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  position: relative;
+  color: #F0EBE8;
+  background-size: cover;
+  background-image: url(../src/images/comFooterBack.png);
+}
+
+
+.footerrubrikker{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  line-height: 5pt;
+  
+}
+.kontaktFooter{
+  line-height: 20pt;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  text-align: left;
+}
+
+.footerGenvej{
+  line-height: 20pt;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  text-align: left;
+
+}
+.footerlink{
+  text-decoration: none;
+  color: #F0EBE8;
+}
+
+.footerlink:hover{
+  text-decoration: none;
+  color: #F0EBE8;
+}
+
+.some{
+  text-align: center;
+}
+.footerlogo{
+  height: 5cm;
+  width: 10cm;
+}
+
+.someIcons{
+  color: #F0EBE8;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  justify-content: space-around;
+  font-size: 60px;
+}
+
+.lin-icon:hover, .fb-icon:hover{
+  color:#DEC271;
+ }
+ 
+ .iconeLink{
+   color: #F0EBE8;
+ }
