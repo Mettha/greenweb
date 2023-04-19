@@ -28,7 +28,6 @@ function App() {
         <Route path='/opretaftale' element={<OpretBooking/>}/>
         <Route path='/bekræftigelse' element={<Bekræftigelse/>}/>
        </Routes>
-
        <Footer/>
     </BrowserRouter>
    </div>

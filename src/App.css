@@ -2,8 +2,9 @@
   max-width: 100%;
   margin: 0 auto;
   font-family: Verdana;
-  background-color: #F0EBE8;
+  background-color: #f1eeeb;
   text-align: center;
+  line-height: 2;
 }
 
 /*------Headings & Paragraphs------*/
@@ -23,6 +24,7 @@ h4{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #313131;
 }
+
 
 
 /*------Navigationbaren------*/
@@ -47,6 +49,156 @@ h4{
   top: -30px;
 }
 
+/*--------------------------------------------------Om Os siden------------------------------*/
+.container{
+  max-width: 100%;
+  height: auto;
+  margin-top: 5%;
+  align-items: center;
+  padding-bottom: 20%;
+}
+
+/*--------Om os banner------------*/
+.omOsbanner{
+  text-align: center;
+  margin-bottom: 10%;
+  padding: 0 15% 0 15%;
+}
+
+.omOsP{
+  text-align: left;
+  margin: 5% 0 5% 0;
+}
+
+.omOsCitat{
+  padding: 0 25.5% 0 25.3%;
+  line-height: 35pt;
+  color: #313131;
+  font-style: italic;
+}
+
+/*-------Værdier--------*/
+
+.værdier{
+  display: flex;
+  justify-content: space-around;
+  color: #F0EBE8;
+  background-color: #69897A;
+  padding: 5% 5% 20% 5%;
+  position: relative;
+}
+
+.værdier .waves{
+  position: absolute;
+  bottom: 0;
+}
+
+.V-søjle{
+  max-width: 30%;
+  text-align: center;
+}
+
+.V-søjle h2{
+  color: #F0EBE8;
+}
+
+.V-søjle p{
+  color: #F0EBE8;
+}
+
+.værdierIcon{
+  font-size: 80px;
+  margin: 10% 0 10% 0;
+}
+
+/*---------Team sectionen-----*/
+
+.teamOverskrift{
+  font-weight: normal;
+  text-align: center;
+  padding: 5%;
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  flex-direction: row;
+}
+
+.col{
+  position: relative;
+}
+
+.pic{
+  filter: grayscale(100%);
+  height: 30vh;
+  width: 20vh;
+}
+
+.picOver{
+  height: 30vh;
+  width: 20vh;
+}
+
+.col:hover .layer{
+  max-height: 500px;
+}
+
+.layer{
+  position: absolute;
+  top: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-bottom: 2px solid #69897A;
+  width: 100%;
+}
+
+.info{
+  width: 120%;
+  padding: 15px 2px 2px 2px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #69897A;
+  color: #ffff;
+  position: absolute;
+  transform: translateX(-10%);
+  border-radius: 5%;
+}
+
+.teamh2{
+  font-size: 18pt;
+}
+
+.teamP{
+margin: 6px 2px;
+}
+
+.icons .fa-brands{
+  font-size: 30px;
+  padding: 10px 8px;
+  cursor: pointer;
+}
+
+.fa-facebook {
+  color: #4267B2;
+}
+
+.linkedin{
+  color: #0A66C2;
+}
+
+.icons{
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.col:hover .icons{
+  max-height: 100%;
+}
+
 /* ---404 side----*/
 .btn-home{
   width: 80px;
@@ -68,6 +220,308 @@ h4{
 }
 
 .btn-home:hover{
+  background-color: #2C6246;
+  transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+
+/*---------------------------------------------------Forsiden-----------------------------*/
+/*-------videobg-----*/
+.videobg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 8%;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  height: 50%;
+  width: 100%;
+}
+
+
+/*------flipbøger section---------------------------*/
+/*---------div for bøgerne ----*/
+.flip-bøger-section{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color:#69897A;
+  padding: 30% 0 50% 0;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+
+}
+
+.sec1, .sec2{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sec2{
+  padding-top: 10%;
+}
+
+.flip-book-overskrift{
+  color: #F0EBE8;
+  text-align: center;
+  margin: 10% 25% 10% 25% ;
+  line-height: 50pt;
+}
+
+.bog1, .bog2, .bog3, .bog4{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+ justify-content: space-between;
+ color: #F0EBE8;
+}
+
+h3{
+  padding-bottom: 5%;
+}
+
+
+.kortbillede{
+  width: 90%;
+  height: 100%;
+  padding: 10%;
+ background-color: #F0EBE8;
+}
+
+iframe { width: 100%;
+height: 100%;
+background-color: #F0EBE8;
+}
+
+.book{
+  display: flex;
+}
+
+#cover1, #cover2, #cover3, #cover4{
+  width: 250px;
+  height: 375px;
+  background-color: #F0EBE8;
+}
+
+
+.flip-book{
+  width: 250px;
+  height: 400px;
+  position: relative;
+  perspective: 1500px;
+}
+
+.flip{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: .5s;
+  color: #000;
+  background-color: #F0EBE8;
+  padding: 5%;
+}
+
+.paragraph{
+  font-size: 12pt;
+  line-height: 16pt;
+  text-align: left;
+}
+
+.font{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 13px;
+  box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #000;
+}
+
+.next-btn, .back-btn{
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.next-btn:hover, .back-btn:hover{
+  color: #DEC271;
+}
+
+
+#p1{
+  z-index: 5;
+}
+
+#p2{
+  z-index: 4;
+}
+
+#p3{
+  z-index: 3;
+}
+
+#p4{
+  z-index: 2;
+}
+
+#p5{
+  z-index: 1;
+}
+
+
+/*-----bogen om farver-------*/
+#a1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#a2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#a3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#a4:checked ~ .flip-book #p4{
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+
+#a5:checked ~ .flip-book #p5{
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+
+
+/*-------bogen om typografi---------*/
+#c1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#c2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#c4:checked ~ .flip-book #p4{
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+
+#c5:checked ~ .flip-book #p5{
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+
+/*-------bogen om filtyper---------*/
+
+#b1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#b2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#b3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#b4:checked ~ .flip-book #p4{
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+
+#b5:checked ~ .flip-book #p5{
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+
+
+/*-----bogen om animationer-------*/
+
+#d1:checked ~ .flip-book #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#d2:checked ~ .flip-book #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#d3:checked ~ .flip-book #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+#d4:checked ~ .flip-book #p4{
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+
+#d5:checked ~ .flip-book #p5{
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+
+
+/*----Book møde med os--------------------*/
+.f-bookmøde{
+  padding: 10% 15% 0 15%;
+  color: #313131;
+  text-align: left;
+}
+.btn-bookmøde{
+  background-color: #DEC271;
+  border: none;
+  color: #F0EBE8;
+  margin-top: 2%;
+  padding: 10px 20px;
+  border-radius: 5pt;
+}
+.btn-bookmøde:hover{
   background-color: #2C6246;
   transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
@@ -98,7 +552,6 @@ margin-right: 550px;
   margin-left: 10px;
   padding: 10px;
   width: 200px;
-  
 }
 
 .formularlayout >button{
@@ -189,17 +642,48 @@ padding: 6%;
 
 }
 
+/*-----------------------------------------------------------Kontakt siden----------------------------*/
+/*---------kontakt text section------*/
+.kontaktside-container{
+  text-align: center;
+  padding: 5% 20% 5% 20%;
+
+}
+.kontakt-spg{
+  margin: 4%;
+}
+/*-----Kontakt links--------*/
+.KontakLinks{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+.kontakSide-Icon{
+  font-size: 60px;
+  margin-bottom: 20%;
+  color: #313131;
+}
+.k-søjle{
+  margin: 10% 0 10% 0;
+}
+
+.værdierP{
+  color: #313131;
+}
+
 
 /*------Footer------*/
 .footer{
   height: auto;
   margin-top: 2%;
-  padding-top: 20%;
-  padding-bottom: 5%;
+  padding: 20% 0 5% 0;
   position: relative;
   color: #F0EBE8;
   background-size: cover;
-  background-image: url(../src/images/comFooterBack.png);
+  background-image: url(../src/images/nyFooterBg.jpg);
+
 }
 
 
@@ -213,7 +697,7 @@ padding: 6%;
 .kontaktFooter{
   line-height: 20pt;
   flex-direction: column;
-  justify-content: space-between;
+
   display: flex;
   text-align: left;
 }
@@ -221,7 +705,7 @@ padding: 6%;
 .footerGenvej{
   line-height: 20pt;
   flex-direction: column;
-  justify-content: space-between;
+
   display: flex;
   text-align: left;
 
@@ -233,31 +717,44 @@ padding: 6%;
 
 .footerlink:hover{
   text-decoration: none;
-  color: #F0EBE8;
+  color: #DEC271 ;
+  
 }
 
-.some{
-  text-align: center;
+.logoer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footerlogo{
-  height: 5cm;
-  width: 10cm;
+  width: 16rem;
+}
+.manifest{
+  height: 8rem;
+  width: 8rem;
+  padding-bottom: 20%;
 }
 
-.someIcons{
+.someIcons-F{
+ margin-top: 10%;
+}
+
+.lin-icon-F:hover{
+ color: #0A66C2;
+}
+
+.fb-icon-F:hover{
+  color: #4267B2;
+}
+
+.iconeLink-F{
   color: #F0EBE8;
-  display: flex;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 20px;
-  justify-content: space-around;
-  font-size: 60px;
+  margin: 5%;
 }
 
-.lin-icon:hover, .fb-icon:hover{
-  color:#DEC271;
- }
- 
- .iconeLink{
-   color: #F0EBE8;
- }
+.brandsIcons{
+  display: flex;
+  flex-direction: row ;
+  font-size: 50px;
+  text-align: left;
+}

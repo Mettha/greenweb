@@ -42,27 +42,27 @@ return (
 <form className="formularlayout" onSubmit={handleSubmit} >
 
 <label>
-    Navn<input type="text" name="navn" value={navn} placeholder="Indtast
+    Navn<input className="inputfelt" type="text" name="navn" value={navn} placeholder="Indtast
     navn" onChange={e => setNavn(e.target.value)} />
 </label>
 
 <label>
-    Email<input type="text" name="email" value={email} placeholder="Indtast
+    Email<input className="inputfelt" type="text" name="email" value={email} placeholder="Indtast
     email" onChange={e => setEmail(e.target.value)} />
 </label>
 
 <label>
-    Telefon<input type="text" name="telefon" value={telefon} placeholder="Indtast
+    Telefon<input className="inputfelt" type="text" name="telefon" value={telefon} placeholder="Indtast
     telefonnummer" onChange={e => setTelefon(e.target.value)} />
 </label>
 
 <label>
-    Firma<input type="text" name="firma" value={firma} placeholder="Indtast
+    Firma<input className="inputfelt" type="text" name="firma" value={firma} placeholder="Indtast
     firma" onChange={e => setFirma(e.target.value)} />
 </label>
 
 <label>
-    Besked<input id="beskedfelt" type="text" name="besked" value={besked} placeholder="Hvad kan vi hjælpe dig med?" 
+    Besked<input className="inputfelt" id="beskedfelt" type="text" name="besked" value={besked} placeholder="Hvad kan vi hjælpe dig med?" 
     onChange={e => setBesked(e.target.value)} />
 </label>
 
