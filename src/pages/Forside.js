@@ -1,7 +1,7 @@
 // images er blevet navngivet med de effekter, de forskellige images er behandlet med samt at det er er blevet komprimeret ligesom comSurf Dvs. video som hedder surf er komprimeret
 //Insert video in background. kilde: https://www.youtube.com/watch?v=LSRNmhLS76o
 import videobg from '../assets/comSurf.mp4';
-import animation from "../images/flipkort/filtryperBehShortPX+blur+hue.png";//kilde:http://lam-ictm.weebly.com/file-types.html
+import animation from "../images/flipkort/animation-desktop.png";
 import KompVideo from "../images/flipkort/KompVideoBehshortPx.png";
 import vælgeSkriftTypeBehShortpx from "../images/flipkort/vælgeSkriftTypeBehShortpx.png";
 import freegif from "../images/flipkort/freeGifBehShortpx.png";
@@ -65,7 +65,7 @@ return (
                         </div>
 
                     <div>
-                        <p className='paragraph'>Brug af img i webudvikling opsuger meget energi og dermed stor CO2 udlening.
+                        <p className='paragraph'>Brug af billeder i webudvikling opsuger meget energi og udleder dermed mere CO2.
                         <br></br>
                         <br></br>Hvad vi kan vælge at gøre for at mindske deres CO2 udledning effekt er ret simpel, 
                                 hvilket er at reducere deres vægt ved at bruge de mest effektive filformater og 
@@ -137,7 +137,7 @@ return (
                                 <div >
                                     <h2>PNG</h2>
                                     <p className='paragraph'>PNG - Anvendes når der ønskes en høj billedkvalitet med tekst indblandet 
-                                        ex. logo eller et banner med meget tekst. 
+                                        fx. logo eller et banner med meget tekst. 
                                         <br></br>
                                         <br></br>
                                         Den vælges også pga. sin transparente baggrund 
@@ -220,8 +220,8 @@ return (
                                     <label className='back-btn' for="a5">Tilbage</label>
                                 </div>
                                 <div >
-                                    <p className='paragraph'>I designprocessen er det værd at kaste et kritisk blik på brugen af fonts, i forhold til hvor mange forskellige fonts og weights der er brug for.
-                                        Da hver weight kommer i separate font filer vil det kun forøge loading time og energiforbrug.<br></br>
+                                    <p className='paragraph'>I designprocessen er det værd at kaste et kritisk blik på brugen af fonts, i forhold til hvor mange forskellige fonts og tykkelser der er brug for.
+                                        Da hver tykkelse kommer i separate font filer vil det kun forøge loading time og energiforbrug.<br></br>
                                     <br></br>
                                         Så har du virkelig brug for en standard, light, semi-bold og bold udgave af din skrifttype 
                                         eller kan du nøjes med en eller to af ovenstående.</p>
@@ -281,7 +281,7 @@ return (
 
 
                             <div className='flip' id='p4'>
-                                <p>Det samme gør sig gældende for billeder. sort/ hvide og monokrome billeder bruger mindre energi 
+                                <p>Det samme gør sig gældende for billeder. Sort/ hvide og monokrome billeder bruger mindre energi 
                                     end billeder med mange farver.
                                 </p>
                                
@@ -319,12 +319,12 @@ return (
                                     <label className='back-btn' for="d1">Tilbage</label>
                                 </div>
                                 <div>
-                                    <p className='paragraph'>Inden for webudviklingverden fremtræder produktion af videoer og animationer også  
+                                    <p className='paragraph'>Inden for webudviklingsverden fremtræder produktion af videoer og animationer også  
                                     som en kæmpe kilde for co2 forurening. 
-                                    Derfor anbefaler vi, at man er meget omhug om at inddrage videoer i sine webdesign
+                                    Derfor anbefaler vi, at man inddrager videoer i sine webdesigns med omhu.
                                     <br></br> <br></br>
                                     Man opererer mellem to filtyper for animationer eller normale 
-                                    video-optagelser, når der skal inkorporeres videoer i webudvikling: </p>
+                                    video-optagelser, når der skal inkorporeres videoer i webudvikling. </p>
                                     <label className='next-btn' for="d1">Næste</label>
                                 </div>
                             </div>

@@ -33,7 +33,6 @@ export default function OpretBooking() {
             <div>
             <br/>
                 <h1>Book et møde med os</h1>
-                <br/>
                 <p>Book et uforpligtende møde, hvor vi sammen drøfter, hvordan vi kan <br/> hjælpe dig og dit firma med at skabe et mere energieffektivt website.
                 </p>
             </div>

@@ -12,7 +12,6 @@ export default function Kontakt() {
             <div className="kontakt-side-banner">
 
                 <h1 className="kontak-overskrift">Her kan du kontakte os</h1>
-
                 <h4 className="kontakt-spg">Har du spørgsmål eller brug for hjælp? </h4>
                 <p>
                     Tøv ikke med at kontakte os, vi sidder klar til at hjælpe dig 

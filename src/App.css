@@ -213,6 +213,7 @@ margin: 6px 2px;
 .boat{
   font-size: 80px;
   color: #313131;
+  line-height: 1.2;
 }
 
 .wave{
@@ -234,7 +235,7 @@ margin: 6px 2px;
   padding-top: 8%;
 }
 
-.content {
+.content{
   position: absolute;
   top: 30%;
   height: 50%;
@@ -261,7 +262,7 @@ margin: 6px 2px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .sec2{
@@ -271,16 +272,15 @@ margin: 6px 2px;
 .flip-book-overskrift{
   color: #F0EBE8;
   text-align: center;
-  margin: 10% 25% 10% 25% ;
-  line-height: 50pt;
+  margin: 5% 25% 5% 25% ;
 }
 
 .bog1, .bog2, .bog3, .bog4{
   display: flex;
   text-align: center;
   flex-direction: column;
- justify-content: space-between;
- color: #F0EBE8;
+  justify-content: space-between;
+  color: #F0EBE8;
 }
 
 h3{
@@ -289,10 +289,10 @@ h3{
 
 
 .kortbillede{
-  width: 90%;
-  height: 100%;
-  padding: 10%;
- background-color: #F0EBE8;
+width: 88%;
+height: 100%;
+padding:  0% 8% 0% 8%;
+background-color: #F0EBE8;
 }
 
 iframe { width: 100%;
@@ -304,9 +304,13 @@ background-color: #F0EBE8;
   display: flex;
 }
 
+.book input{
+  display: none;
+}
+
 #cover1, #cover2, #cover3, #cover4{
   width: 250px;
-  height: 375px;
+  height: 425px;
   background-color: #F0EBE8;
 }
 
@@ -375,7 +379,6 @@ background-color: #F0EBE8;
 .next-btn:hover, .back-btn:hover{
   color: #DEC271;
 }
-
 
 #p1{
   z-index: 5;

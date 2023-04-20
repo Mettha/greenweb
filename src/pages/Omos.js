@@ -99,7 +99,7 @@ export default function Omos() {
                 <h2 className="teamh2">Mira</h2>
                 <p className="teamP">
                     mira@gwd.dk<br></br> 
-                    Copy og webudvikling</p>
+                    Design og webudvikling</p>
                 <div className="icons">
                     <NavLink className="iconeLink" to="/"><FontAwesomeIcon className="fa-brands fa-facebook"  icon={faFacebookSquare}></FontAwesomeIcon></NavLink>
                     <NavLink className="iconeLink" to="/"><FontAwesomeIcon className="fa-brands linkedin" icon={faLinkedin}></FontAwesomeIcon></NavLink>
