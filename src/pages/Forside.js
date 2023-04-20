@@ -401,7 +401,7 @@ return (
                 <p>Har du en travl hverdag med fuldt fokus på din forretningsudvikling? <br/> 
                     Kunne ord som system font og green hosting lige så godt være russiske fraser?Bare rolig vi er passionerede omkring at gøre webdesign mere bæredygtigt og varetager alle opgaver i udviklingen, så du kan bruge din tid på at udvikle din forretning.<br/>
                     <br/>
-                    Du kan trygt ligge udviklingen af dit nye website i vores hænder. 
+                    Du kan trygt lægge udviklingen af dit nye website i vores hænder. 
                     Vi hjælper dig fra A-Z med at optimere dit website til at have mindre påvirkning på miljøet end de gængse websites derude.
                     <br/>
                     <br/>

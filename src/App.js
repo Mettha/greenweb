@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Forside from './pages/Forside';
 import Omos from './pages/Omos';
@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
        <Nav/>
        <Routes>
-         <Route path='/Forside' element={<Forside/>}/>
+         <Route path='/' element={<Forside/>}/>
          <Route path='/omos' element={<Omos/>}/>
          <Route path='/kontakt' element={<Kontakt/>}/>
          <Route path='/projekter' element={<Projekter/>}/>
@@ -27,6 +27,7 @@ function App() {
         <Route path='/bookinger/posts/:postId' element={<OpdaterBooking/>}/>
         <Route path='/opretaftale' element={<OpretBooking/>}/>
         <Route path='/bekræftigelse' element={<Bekræftigelse/>}/>
+        <Route path="*" element={<Navigate to="/" />} />
        </Routes>
        <Footer/>
     </BrowserRouter>

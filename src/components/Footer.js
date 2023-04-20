@@ -47,6 +47,8 @@ export default function Sidefod(){
                     <br/>
                     <NavLink className="footerlink">Jobs</NavLink> 
                     <br/>
+                    <NavLink className="footerlink" to="/bookinger">Medarbejder login</NavLink> 
+                    <br/>
                     <NavLink className="footerlink">Privatlivspolitik </NavLink>
                     <br/>
                     <NavLink className="footerlink"> Cookies </NavLink>
