@@ -15,7 +15,7 @@ import { faLightbulb, faMountain } from '@fortawesome/free-solid-svg-icons' //ki
 //Hentet fra: https://getwaves.io/
 
 <script src="https://kit.fontawesome.com/0cb8c02c78.js" crossorigin="anonymous"></script>
-
+//overstående er ubrugt javascript
 export default function Omos() {
     return (
         <div className="container">
@@ -46,7 +46,7 @@ export default function Omos() {
                     <h2>Vision</h2>
                     <FontAwesomeIcon className="værdierIcon" icon={faLightbulb} />
                     <p className="værdierP">Vi vil skabe en mere bæredygtig tilgang til webdesign, for at gøre internettet mere tilgængeligt og mindre forurenende. </p>
-                </div>
+                </div> 
                 <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F0EBE8" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,192C384,224,480,256,576,240C672,224,768,160,864,138.7C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             </section>
 

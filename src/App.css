@@ -28,9 +28,10 @@ h4{
 
 
 /*------Navigationbaren------*/
+/*-----Obs space-between er udnødvendig-----*/
 .globalnavigation{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 20px;
@@ -135,6 +136,9 @@ h4{
   height: 30vh;
   width: 20vh;
 }
+/* The full form of VH is viewport height. 
+It works like the percentage unit as well. 
+Specifying 10vh is equivalent to occupying 10% of entire visible screen height. */
 
 .picOver{
   height: 30vh;
@@ -154,6 +158,7 @@ h4{
   border-bottom: 2px solid #69897A;
   width: 100%;
 }
+/* The overflow property specifies what happens if content overflows an element's box */
 
 .info{
   width: 120%;
@@ -163,9 +168,15 @@ h4{
   background-color: #69897A;
   color: #ffff;
   position: absolute;
-  transform: translateX(-10%);
+  transform: translateX(-10%); /* placering af grøn boks -> kunne have brug left og right i samspil med position absolute */
   border-radius: 5%;
 }
+/* position: absolute = is positioned relative to the nearest positioned ancestor 
+position: relative = is positioned relative to its normal position.
+
+position: fixed = is positioned relative to the viewport = stays in the same place even if the page is scrolled
+position: sticky = is positioned based on the user's scroll position. 
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).*/
 
 .teamh2{
   font-size: 18pt;
@@ -224,7 +235,14 @@ margin: 6px 2px;
   background-color: #2C6246;
   transition: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-
+/* The cubic-bezier() function defines a Cubic Bezier curve.
+A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. 
+P0 and P3 are the start and the end of the curve and, in CSS these points are fixed as 
+the coordinates are ratios. P0 is (0, 0) and represents the initial time and the initial state, 
+P3 is (1, 1) and represents the final time and the final state.
+The cubic-bezier() function can be used with the animation-timing-function property and the 
+transition-timing-function property. 
+OBS gør ingen forskel her*/
 
 /*---------------------------------------------------Forsiden-----------------------------*/
 /*-------videobg-----*/
@@ -321,6 +339,8 @@ background-color: #F0EBE8;
   position: relative;
   perspective: 1500px;
 }
+/* The perspective CSS property determines the distance between 
+the z=0 plane and the user in order to give a 3D-positioned element some perspective.*/
 
 .flip{
   width: 100%;
@@ -336,6 +356,9 @@ background-color: #F0EBE8;
   background-color: #F0EBE8;
   padding: 5%;
 }
+/*   transform-origin: left; = roterer om venste som center point
+ preserve-3d = Indicates that the children of the element should be positioned in the 3D-space.
+  transform: rotateY(0deg); = roterer 0 grader om y akse*/
 
 .paragraph{
   font-size: 12pt;
@@ -354,6 +377,11 @@ background-color: #F0EBE8;
   padding: 0 13px;
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
 }
+/* The box-sizing CSS property sets how the total width and height of an element is calculated.
+=> tells the browser to account for any border and padding in the values you specify for an element's 
+width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border 
+or padding you added, and the content box will shrink to absorb that extra width. 
+This typically makes it much easier to size elements.*/
 
 .back{
   position: absolute;
@@ -366,6 +394,9 @@ background-color: #F0EBE8;
   backface-visibility: hidden;
   background-color: #000;
 }
+/*   z-index: 99; = sikker på det ligger forrest/ tætteste på seeren 
+The backface-visibility CSS property sets whether the back face of 
+an element is visible when turned towards the user. (ved et 3d element)*/
 
 .next-btn, .back-btn{
   position: absolute;
@@ -695,12 +726,13 @@ padding: 6%;
   justify-content: space-around;
   flex-wrap: wrap;
   line-height: 5pt;
-  
 }
+/* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap 
+onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.*/
+
 .kontaktFooter{
   line-height: 20pt;
   flex-direction: column;
-
   display: flex;
   text-align: left;
 }
@@ -708,7 +740,6 @@ padding: 6%;
 .footerGenvej{
   line-height: 20pt;
   flex-direction: column;
-
   display: flex;
   text-align: left;
 
@@ -737,6 +768,10 @@ padding: 6%;
   width: 8rem;
   padding-bottom: 20%;
 }
+/* 8rem = 128px
+Rem (short for “root-em”) units dictate an element's font size relative to the size of the root element. 
+By default, most browsers use a font size value of 16px. So, if the root element is 16px, 
+an element with the value 1rem will also equal 16px.*/ 
 
 .someIcons-F{
  margin-top: 10%;
